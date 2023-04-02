@@ -6,7 +6,7 @@ class QuestionNumber:
     raw: str
     number: int
     decorator: str
-    _complete: bool
+    _complete: bool = False
 
     def normalized(self):
         return f"{self.number}. "
