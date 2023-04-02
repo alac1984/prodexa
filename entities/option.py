@@ -9,7 +9,12 @@ class Option:
     text: str
     image: Image | None = None
     _complete: bool = False
+    _answer: bool = False
 
     @property
     def is_complete(self):
         return self._complete
+
+    @property
+    def is_answer(self):
+        return self._answer
